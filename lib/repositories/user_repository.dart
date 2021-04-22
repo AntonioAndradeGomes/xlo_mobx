@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:parse_server_sdk/parse_server_sdk.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 import 'package:xlo_clone/models/User.dart';
 import 'package:xlo_clone/repositories/parse_errors.dart';
 import 'package:xlo_clone/repositories/table_key.dart';

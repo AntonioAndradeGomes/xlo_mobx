@@ -97,8 +97,7 @@ class SignUpScreen extends StatelessWidget {
                           keyboardType: TextInputType.phone,
                           autocorrect: false,
                           inputFormatters: [
-                            // ignore: deprecated_member_use
-                            WhitelistingTextInputFormatter.digitsOnly,
+                            FilteringTextInputFormatter.digitsOnly,
                             TelefoneInputFormatter()
                           ],
                         ),

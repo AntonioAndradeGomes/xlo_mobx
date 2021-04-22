@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:parse_server_sdk/parse_server_sdk.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 import 'package:xlo_clone/screens/base/base_screen.dart';
+import 'package:xlo_clone/stores/category_store.dart';
 import 'package:xlo_clone/stores/page_store.dart';
 import 'package:xlo_clone/stores/user_manager_store.dart';
 
@@ -25,6 +26,7 @@ Future<void> initializeParse() async {
 void setupLocators() {
   GetIt.I.registerSingleton(PageStore());
   GetIt.I.registerSingleton(UserManagerStore());
+  GetIt.I.registerSingleton(CategoryStore());
 }
 
 class MyApp extends StatelessWidget {
